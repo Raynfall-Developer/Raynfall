@@ -1,0 +1,15 @@
+"name":{
+    "name": "vanilla-website",
+    "description": "description",
+    "authors": "author",
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "dependencies": {}
+}
+
+"scripts": {
+    "dev:assets": "webpack --watch",
+    "dev:start": "live-server --open=./public/ --host=localhost --watch=./public/",
+    "dev": "-runnpm-all -p dev:*",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
